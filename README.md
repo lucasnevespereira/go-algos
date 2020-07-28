@@ -1,3 +1,0 @@
-# go-algos
-
-### Bubble Sort
