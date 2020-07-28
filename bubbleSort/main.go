@@ -5,13 +5,25 @@ import "fmt"
 func main() {
 	var numbers []int = []int{5, 4, 2, 3, 1, 0}
 
-	fmt.Println("Before swapping:", numbers)
+	fmt.Println("Initial numbers:", numbers)
 
-	swap(numbers)
-	fmt.Println("After 1 swap:", numbers)
+	bubbleSort(numbers)
+	fmt.Println("After sorting:", numbers)
 
 }
 
+// The Sort
+func bubbleSort(numbers []int) {
+
+	var N int = len(numbers)
+
+	var i int
+	for i = 0; i < N; i++ {
+		swap(numbers)
+	}
+}
+
+// The Swap
 func swap(numbers []int) {
 
 	var N int = len(numbers)
